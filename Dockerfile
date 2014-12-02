@@ -2,6 +2,7 @@ FROM crazycode/docker-ubuntu-jdk8
 
 MAINTAINER crazycode
 
+RUN apt-get update
 RUN apt-get install -y unzip wget
 RUN cd /tmp && wget http://downloads.typesafe.com/typesafe-activator/1.2.3/typesafe-activator-1.2.3.zip
 RUN cd /tmp && unzip -q typesafe-activator-1.2.3.zip
