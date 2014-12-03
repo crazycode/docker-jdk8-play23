@@ -16,7 +16,7 @@ RUN cd /tmp && \
 RUN cd /tmp/test && \
   activator compile
 
-RUN rm -rf /tmp/test
+RUN rm -rf /tmp/test && rm -rf /tmp/*.zip
 RUN chmod +x /opt/activator-1.2.10/activator
 
 EXPOSE 9000
